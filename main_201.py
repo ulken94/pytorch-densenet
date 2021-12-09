@@ -101,7 +101,6 @@ for epoch in range(300):
         inputs, labels = data
         inputs, labels = inputs.to(device), labels.to(device)
 
-        import pdb; pdb.set_trace()
         optimizer.zero_grad()
 
         outputs = densenet(inputs)
